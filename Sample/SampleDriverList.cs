@@ -21,6 +21,7 @@
 using iRacingSDK;
 using iRacingSDK.Support;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 
 namespace Sample
@@ -30,16 +31,14 @@ namespace Sample
         public static void Sample()
         {
             var iracing = new iRacingConnection();
+            var firstDataSample = iracing.GetDataFeed().First();
 
-            foreach (var data in iRacing.GetDataFeed().AtSpeed(16))
+            foreach (var driverInfo in firstDataSample.SessionData.DriverInfo.CompetingDrivers)
             {
-                foreach ( var driverInfo in data.SessionData.DriverInfo.CompetingDrivers)
-                {
-                    //Trace.WriteLine("RaceDistance: {0}".F(data.Telemetry.RaceDistance));
-                    Trace.WriteLine("AbbrevName: {0}, TeamName: {1}, UserName: {2}".F(driverInfo.AbbrevName, driverInfo.TeamName, driverInfo.UserName));
-                }
+                Trace.WriteLine("AbbrevName: {0}, TeamName: {1}, UserName: {2}".F(driverInfo.AbbrevName, driverInfo.TeamName, driverInfo.UserName));
+            }
 
-                Thread.Sleep(2000);
+            Thread.Sleep(10000);
             }
         }
     }
