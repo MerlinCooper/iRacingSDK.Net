@@ -95,7 +95,7 @@ namespace Sample
 
         private void InspectDataSamples_Click(object sender, EventArgs e)
         {
-            logMessages.StartOperation(SampleTelemetryAccess.Sample);
+            logMessages.StartOperation(SampleDriverList.Sample);
         }
 
         private void PitCommands_Click(object sender, EventArgs e)

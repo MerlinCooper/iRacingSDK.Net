@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SampleDriverList.cs" />
     <Compile Include="SampleCarPosition.cs" />
     <Compile Include="SampleFindIncidents.cs" />
     <Compile Include="SampleConventionEventData.cs" />

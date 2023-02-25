@@ -52,6 +52,7 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.btDriverList = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -244,7 +245,7 @@
             this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 444);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(503, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(646, 22);
             this.statusStrip1.TabIndex = 19;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -292,11 +293,21 @@
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
+            // btDriverList
+            // 
+            this.btDriverList.Location = new System.Drawing.Point(466, 12);
+            this.btDriverList.Name = "btDriverList";
+            this.btDriverList.Size = new System.Drawing.Size(136, 46);
+            this.btDriverList.TabIndex = 11;
+            this.btDriverList.Text = "Get Driver List";
+            this.btDriverList.UseVisualStyleBackColor = true;
+            this.btDriverList.Click += new System.EventHandler(this.InspectDataSamples_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 466);
+            this.ClientSize = new System.Drawing.Size(646, 466);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.dateTimePicker_RacePosition);
@@ -307,6 +318,7 @@
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
+            this.Controls.Add(this.btDriverList);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -355,5 +367,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button btDriverList;
     }
 }
