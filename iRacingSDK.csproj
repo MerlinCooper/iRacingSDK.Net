@@ -132,7 +132,6 @@
     <None Include="Docs\DataFeedFilters_WithCorrectedPercentages.md" />
     <None Include="Docs\DataFeedFilters.md" />
     <None Include="Docs\DataSample.md" />
-    <None Include="iRacingSDK.nuspec" />
     <None Include="LICENSE.txt" />
     <None Include="README.md" />
     <None Include="tools\package.cmd" />
