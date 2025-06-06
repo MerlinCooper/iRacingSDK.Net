@@ -39,7 +39,6 @@ namespace Sample
             }
 
             Thread.Sleep(10000);
-            }
         }
     }
 }
