@@ -151,7 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="YamlDotNet">
-      <Version>13.0.1</Version>
+      <Version>15.1.6</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />
